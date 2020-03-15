@@ -2,4 +2,10 @@
     <string name="app_name">Calc</string>
     <string name="cos">Cos</string>
     <string name="sin">sin</string>
+    <string name="text">單擊按鈕獲得輸入說明</string>
+    <string name="editText">輸入數字</string>
+    <string name="cos_rad">Cos_Rad</string>
+    <string name="sin_rad">sin_Rad</string>
+    <string name="tan_rad">tan_Rad</string>
+    <string name="tan">tan</string>
 </resources>

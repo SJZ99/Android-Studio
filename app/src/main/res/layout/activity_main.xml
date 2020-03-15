@@ -7,6 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="@string/text"
+        />
 
     <EditText
         android:id="@+id/textField"
@@ -17,7 +25,7 @@
         android:ems="10"
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
-        android:hint="輸入數字"
+        android:hint="@string/editText"
         />
     <TextView
         android:id="@+id/output"
@@ -28,7 +36,7 @@
         android:layout_marginTop="30dp"
         android:textColor="#176580"
         android:inputType="number"
-        />
+        tools:ignore="TextViewEdits" />
     <Button
         android:id="@+id/cos"
         android:layout_width="wrap_content"
@@ -53,9 +61,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/sin"
-        android:layout_toRightOf="@id/sin"
-        android:layout_marginLeft="15dp"
-        android:text="tan"
+        android:layout_toEndOf="@id/sin"
+        android:layout_marginStart="15dp"
+        android:text="@string/tan"
+        />
+    <Button
+        android:id="@+id/cos_Rad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/cos"
+        android:layout_below="@id/cos"
+        android:layout_marginTop="30dp"
+        android:text="@string/cos_rad"
+        />
+    <Button
+        android:id="@+id/sin_Rad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cos_Rad"
+        android:layout_alignStart="@id/sin"
+        android:text="@string/sin_rad"
+        />
+    <Button
+        android:id="@+id/tan_Rad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cos_Rad"
+        android:layout_alignStart="@id/tan"
+        android:text="@string/tan_rad"
         />
 
 
